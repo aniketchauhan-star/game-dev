@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>NEXUS Play Studio — start</title>
+<!--
+  Only for static file servers such as VS Code's Live Server, which cannot run NEXUS Play Studio.
+  The studio is a local Node app (API + worker + Vite). This page finds the running studio on this
+  computer and opens it, or shows how to start it. It is not part of the studio build.
+-->
+<style>
+  :root { --bg: #f4f7fb; --panel: #ffffff; --text: #0f1b2d; --muted: #4c5b70; --border: #d5deea; --accent: #0b6fbf; --code: #eef3f9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1220; --panel: #121c2e; --text: #e7eef8; --muted: #a3b2c7; --border: #24324a; --accent: #68e0f5; --code: #0e1728; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  main { width: min(640px, 100%); background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+  h1 { margin: 0 0 4px; font-size: 1.5rem; }
+  p { margin: 0 0 14px; color: var(--muted); }
+  #status { color: var(--text); font-weight: 600; }
+  ol { margin: 0 0 16px; padding-left: 1.3em; }
+  li { margin: 6px 0; }
+  code { background: var(--code); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--text); }
+  a { color: var(--accent); }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  button { font: inherit; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  small { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>NEXUS Play Studio</h1>
+  <p id="status" role="status" aria-live="polite">Looking for the running studio on this computer…</p>
+  <p>This page is served by a static file server (for example VS Code’s Live Server), which cannot run the studio. NEXUS Play Studio is a local app with a server and a background worker.</p>
+  <ol>
+    <li>In a terminal in this folder, run <code>npm install</code> (first time only).</li>
+    <li>Run <code>npm run dev</code>.</li>
+    <li>Open <a href="http://127.0.0.1:5173/">http://127.0.0.1:5173</a> — this page also opens it by itself once it is running.</li>
+  </ol>
+  <p>Production-style instead: <code>npm run build</code>, then <code>npm start</code>, and open <a href="http://127.0.0.1:5174/">http://127.0.0.1:5174</a>.</p>
+  <div class="row">
+    <button type="button" id="again">Check again</button>
+    <small>Live Server is not needed for NEXUS — you can stop it from the VS Code status bar.</small>
+  </div>
+</main>
+<script>
+  // Probe the studio's local ports. A no-cors request resolves when something answers and fails when nothing listens.
+  const targets = ['http://127.0.0.1:5173/', 'http://127.0.0.1:5174/'];
+  const status = document.getElementById('status');
+  async function reachable(url) {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 1500);
+    try {
+      await fetch(url, { mode: 'no-cors', cache: 'no-store', signal: ctrl.signal });
+      return true;
+    } catch {
+      return false;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  async function find() {
+    status.textContent = 'Looking for the running studio on this computer…';
+    for (const url of targets) {
+      if (await reachable(url)) {
+        status.textContent = `Opening the studio at ${url}…`;
+        location.replace(url);
+        return;
+      }
+    }
+    status.textContent = 'The studio is not running yet. Start it with the steps below.';
+  }
+  document.getElementById('again').addEventListener('click', find);
+  find();
+</script>
+</body>
+</html>

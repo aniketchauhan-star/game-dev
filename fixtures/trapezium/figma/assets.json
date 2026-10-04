@@ -1,0 +1,14 @@
+{
+  "renders": {
+    "10:1": "frames/01-intro.png",
+    "10:2": "frames/02-spot.png",
+    "10:3": "frames/02b-spot-hint.png",
+    "10:4": "frames/03-match.png",
+    "10:5": "frames/04-complete.png",
+    "20:1": "art/button-primary.png"
+  },
+  "fills": {
+    "ref-ice-bg": "art/ice-background.png",
+    "ref-swiftee": "art/swiftee-01.png"
+  }
+}

@@ -1,0 +1,2515 @@
+{
+ "name": "Trapezium Quest — Grade 8 (sample)",
+ "lastModified": "2026-09-28T09:30:00Z",
+ "version": "4242424242",
+ "role": "viewer",
+ "editorType": "figma",
+ "thumbnailUrl": "",
+ "schemaVersion": 0,
+ "document": {
+  "id": "0:0",
+  "name": "Document",
+  "type": "DOCUMENT",
+  "children": [
+   {
+    "id": "0:1",
+    "name": "Game screens",
+    "type": "CANVAS",
+    "backgroundColor": {
+     "r": 0.8980392156862745,
+     "g": 0.8980392156862745,
+     "b": 0.8980392156862745,
+     "a": 1
+    },
+    "children": [
+     {
+      "id": "10:1",
+      "name": "01 Intro",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "background": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "fills": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "backgroundColor": {
+       "r": 0.8509803921568627,
+       "g": 0.9450980392156862,
+       "b": 0.9921568627450981,
+       "a": 1
+      },
+      "strokes": [],
+      "effects": [],
+      "absoluteBoundingBox": {
+       "x": 0,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+      },
+      "absoluteRenderBounds": {
+       "x": 0,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+      },
+      "children": [
+       {
+        "id": "11:1",
+        "name": "Ice background",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-ice-bg"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 0,
+         "y": 0,
+         "width": 1920,
+         "height": 1080
+        },
+        "absoluteRenderBounds": {
+         "x": 0,
+         "y": 0,
+         "width": 1920,
+         "height": 1080
+        }
+       },
+       {
+        "id": "11:2",
+        "name": "Title panel",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.94
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.5607843137254902,
+           "g": 0.8274509803921568,
+           "b": 0.9568627450980393,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 460,
+         "y": 210,
+         "width": 1000,
+         "height": 320
+        },
+        "absoluteRenderBounds": {
+         "x": 460,
+         "y": 210,
+         "width": 1000,
+         "height": 320
+        },
+        "cornerRadius": 40
+       },
+       {
+        "id": "11:3",
+        "name": "Title",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Trapezium Quest",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 96,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 120
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 500,
+         "y": 300,
+         "width": 920,
+         "height": 110
+        },
+        "absoluteRenderBounds": {
+         "x": 500,
+         "y": 300,
+         "width": 920,
+         "height": 110
+        }
+       },
+       {
+        "id": "11:4",
+        "name": "Subtitle",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Grade 8 · Quadrilaterals",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 600,
+         "fontSize": 40,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 50
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.12156862745098039,
+           "g": 0.37254901960784315,
+           "b": 0.5450980392156862,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 500,
+         "y": 405,
+         "width": 920,
+         "height": 60
+        },
+        "absoluteRenderBounds": {
+         "x": 500,
+         "y": 405,
+         "width": 920,
+         "height": 60
+        }
+       },
+       {
+        "id": "11:5",
+        "name": "Swiftee",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-swiftee"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 1340,
+         "y": 560,
+         "width": 300,
+         "height": 300
+        },
+        "absoluteRenderBounds": {
+         "x": 1340,
+         "y": 560,
+         "width": 300,
+         "height": 300
+        }
+       },
+       {
+        "id": "11:6",
+        "name": "Start button",
+        "type": "INSTANCE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 780,
+         "y": 640,
+         "width": 360,
+         "height": 110
+        },
+        "absoluteRenderBounds": {
+         "x": 780,
+         "y": 640,
+         "width": 360,
+         "height": 110
+        },
+        "interactions": [
+         {
+          "trigger": {
+           "type": "ON_CLICK"
+          },
+          "actions": [
+           {
+            "type": "NODE",
+            "destinationId": "10:2",
+            "navigation": "NAVIGATE",
+            "transition": {
+             "type": "DISSOLVE",
+             "duration": 0.3,
+             "easing": {
+              "type": "EASE_OUT"
+             }
+            },
+            "preserveScrollPosition": false
+           }
+          ]
+         }
+        ],
+        "children": [
+         {
+          "id": "11:7",
+          "name": "Button fill",
+          "type": "RECTANGLE",
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 0.16470588235294117,
+             "g": 0.6039215686274509,
+             "b": 0.8470588235294118,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 780,
+           "y": 640,
+           "width": 360,
+           "height": 110
+          },
+          "absoluteRenderBounds": {
+           "x": 780,
+           "y": 640,
+           "width": 360,
+           "height": 110
+          },
+          "cornerRadius": 55
+         },
+         {
+          "id": "11:8",
+          "name": "Label",
+          "type": "TEXT",
+          "blendMode": "PASS_THROUGH",
+          "characters": "Start",
+          "style": {
+           "fontFamily": "Baloo 2",
+           "fontPostScriptName": null,
+           "fontWeight": 700,
+           "fontSize": 44,
+           "textAlignHorizontal": "CENTER",
+           "textAlignVertical": "CENTER",
+           "lineHeightPx": 55
+          },
+          "characterStyleOverrides": [],
+          "styleOverrideTable": {},
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 780,
+           "y": 662,
+           "width": 360,
+           "height": 66
+          },
+          "absoluteRenderBounds": {
+           "x": 780,
+           "y": 662,
+           "width": 360,
+           "height": 66
+          }
+         }
+        ]
+       },
+       {
+        "id": "11:9",
+        "name": "Snowflake",
+        "type": "VECTOR",
+        "blendMode": "PASS_THROUGH",
+        "rotation": 0.26,
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 140,
+         "y": 120,
+         "width": 64,
+         "height": 64
+        },
+        "absoluteRenderBounds": {
+         "x": 140,
+         "y": 120,
+         "width": 64,
+         "height": 64
+        }
+       },
+       {
+        "id": "11:10",
+        "name": "Old title (hidden)",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 0,
+           "b": 0,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 500,
+         "y": 160,
+         "width": 920,
+         "height": 40
+        },
+        "absoluteRenderBounds": {
+         "x": 500,
+         "y": 160,
+         "width": 920,
+         "height": 40
+        },
+        "visible": false
+       }
+      ]
+     },
+     {
+      "id": "10:2",
+      "name": "02 Spot the parallel sides",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "background": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "fills": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "backgroundColor": {
+       "r": 0.8509803921568627,
+       "g": 0.9450980392156862,
+       "b": 0.9921568627450981,
+       "a": 1
+      },
+      "strokes": [],
+      "effects": [],
+      "absoluteBoundingBox": {
+       "x": 2100,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+      },
+      "absoluteRenderBounds": {
+       "x": 2100,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+      },
+      "children": [
+       {
+        "id": "12:1",
+        "name": "Ice background",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-ice-bg"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2100,
+         "y": 0,
+         "width": 1920,
+         "height": 1080
+        },
+        "absoluteRenderBounds": {
+         "x": 2100,
+         "y": 0,
+         "width": 1920,
+         "height": 1080
+        }
+       },
+       {
+        "id": "12:2",
+        "name": "Instruction panel",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.94
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.5607843137254902,
+           "g": 0.8274509803921568,
+           "b": 0.9568627450980393,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2220,
+         "y": 60,
+         "width": 1680,
+         "height": 230
+        },
+        "absoluteRenderBounds": {
+         "x": 2220,
+         "y": 60,
+         "width": 1680,
+         "height": 230
+        },
+        "cornerRadius": 40
+       },
+       {
+        "id": "12:3",
+        "name": "Screen title",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Spot the parallel sides",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 56,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 70
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2260,
+         "y": 95,
+         "width": 1600,
+         "height": 80
+        },
+        "absoluteRenderBounds": {
+         "x": 2260,
+         "y": 95,
+         "width": 1600,
+         "height": 80
+        }
+       },
+       {
+        "id": "12:4",
+        "name": "Instruction",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "A trapezium has exactly one pair of parallel sides. Drag each shape to the right group.",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 500,
+         "fontSize": 34,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 43
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2260,
+         "y": 180,
+         "width": 1600,
+         "height": 80
+        },
+        "absoluteRenderBounds": {
+         "x": 2260,
+         "y": 180,
+         "width": 1600,
+         "height": 80
+        }
+       },
+       {
+        "id": "12:5",
+        "name": "Play area",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.35
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2260,
+         "y": 330,
+         "width": 1600,
+         "height": 600
+        },
+        "absoluteRenderBounds": {
+         "x": 2260,
+         "y": 330,
+         "width": 1600,
+         "height": 600
+        },
+        "cornerRadius": 36
+       },
+       {
+        "id": "12:6",
+        "name": "Swiftee",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-swiftee"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 3740,
+         "y": 820,
+         "width": 220,
+         "height": 220
+        },
+        "absoluteRenderBounds": {
+         "x": 3740,
+         "y": 820,
+         "width": 220,
+         "height": 220
+        }
+       },
+       {
+        "id": "12:7",
+        "name": "Frosty glow",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientStops": [
+           {
+            "position": 0,
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 0.6
+            }
+           },
+           {
+            "position": 1,
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 0
+            }
+           }
+          ],
+          "gradientHandlePositions": []
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2100,
+         "y": 0,
+         "width": 1920,
+         "height": 120
+        },
+        "absoluteRenderBounds": {
+         "x": 2100,
+         "y": 0,
+         "width": 1920,
+         "height": 120
+        }
+       },
+       {
+        "id": "12:8",
+        "name": "Masked sparkle",
+        "type": "GROUP",
+        "blendMode": "PASS_THROUGH",
+        "fills": [],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2160,
+         "y": 940,
+         "width": 120,
+         "height": 120
+        },
+        "absoluteRenderBounds": {
+         "x": 2160,
+         "y": 940,
+         "width": 120,
+         "height": 120
+        },
+        "children": [
+         {
+          "id": "12:9",
+          "name": "Mask",
+          "type": "ELLIPSE",
+          "isMask": true,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 2160,
+           "y": 940,
+           "width": 120,
+           "height": 120
+          },
+          "absoluteRenderBounds": {
+           "x": 2160,
+           "y": 940,
+           "width": 120,
+           "height": 120
+          }
+         },
+         {
+          "id": "12:10",
+          "name": "Sparkle art",
+          "type": "STAR",
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 1,
+             "g": 0.8470588235294118,
+             "b": 0.30196078431372547,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 2170,
+           "y": 950,
+           "width": 100,
+           "height": 100
+          },
+          "absoluteRenderBounds": {
+           "x": 2170,
+           "y": 950,
+           "width": 100,
+           "height": 100
+          }
+         }
+        ]
+       },
+       {
+        "id": "12:11",
+        "name": "Next button",
+        "type": "INSTANCE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [],
+        "strokes": [],
+        "effects": [
+         {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 0.3
+          },
+          "offset": {
+           "x": 0,
+           "y": 4
+          }
+         }
+        ],
+        "absoluteBoundingBox": {
+         "x": 3560,
+         "y": 950,
+         "width": 280,
+         "height": 86
+        },
+        "absoluteRenderBounds": {
+         "x": 3560,
+         "y": 950,
+         "width": 280,
+         "height": 86
+        },
+        "interactions": [
+         {
+          "trigger": {
+           "type": "ON_CLICK"
+          },
+          "actions": [
+           {
+            "type": "NODE",
+            "destinationId": "10:4",
+            "navigation": "NAVIGATE",
+            "transition": {
+             "type": "SMART_ANIMATE",
+             "duration": 0.4,
+             "easing": {
+              "type": "EASE_OUT"
+             }
+            },
+            "preserveScrollPosition": false
+           }
+          ]
+         },
+         {
+          "trigger": {
+           "type": "ON_HOVER"
+          },
+          "actions": [
+           {
+            "type": "URL",
+            "url": "https://example.com/ignore-this-link",
+            "openInNewTab": true
+           }
+          ]
+         }
+        ],
+        "children": [
+         {
+          "id": "12:12",
+          "name": "Button fill",
+          "type": "RECTANGLE",
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 0.16470588235294117,
+             "g": 0.6039215686274509,
+             "b": 0.8470588235294118,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 3560,
+           "y": 950,
+           "width": 280,
+           "height": 86
+          },
+          "absoluteRenderBounds": {
+           "x": 3560,
+           "y": 950,
+           "width": 280,
+           "height": 86
+          },
+          "cornerRadius": 43
+         },
+         {
+          "id": "12:13",
+          "name": "Label",
+          "type": "TEXT",
+          "blendMode": "PASS_THROUGH",
+          "characters": "Next",
+          "style": {
+           "fontFamily": "Baloo 2",
+           "fontPostScriptName": null,
+           "fontWeight": 700,
+           "fontSize": 36,
+           "textAlignHorizontal": "CENTER",
+           "textAlignVertical": "CENTER",
+           "lineHeightPx": 45
+          },
+          "characterStyleOverrides": [],
+          "styleOverrideTable": {},
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 3560,
+           "y": 968,
+           "width": 280,
+           "height": 50
+          },
+          "absoluteRenderBounds": {
+           "x": 3560,
+           "y": 968,
+           "width": 280,
+           "height": 50
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "10:3",
+      "name": "02b Spot the parallel sides — hint state",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "background": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "fills": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "backgroundColor": {
+       "r": 0.8509803921568627,
+       "g": 0.9450980392156862,
+       "b": 0.9921568627450981,
+       "a": 1
+      },
+      "strokes": [],
+      "effects": [],
+      "absoluteBoundingBox": {
+       "x": 4200,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+      },
+      "absoluteRenderBounds": {
+       "x": 4200,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+      },
+      "children": [
+       {
+        "id": "13:1",
+        "name": "Ice background",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-ice-bg"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4200,
+         "y": 0,
+         "width": 1920,
+         "height": 1080
+        },
+        "absoluteRenderBounds": {
+         "x": 4200,
+         "y": 0,
+         "width": 1920,
+         "height": 1080
+        }
+       },
+       {
+        "id": "13:2",
+        "name": "Instruction panel",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.94
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.5607843137254902,
+           "g": 0.8274509803921568,
+           "b": 0.9568627450980393,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4320,
+         "y": 60,
+         "width": 1680,
+         "height": 230
+        },
+        "absoluteRenderBounds": {
+         "x": 4320,
+         "y": 60,
+         "width": 1680,
+         "height": 230
+        },
+        "cornerRadius": 40
+       },
+       {
+        "id": "13:3",
+        "name": "Screen title",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Spot the parallel sides",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 56,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 70
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4360,
+         "y": 95,
+         "width": 1600,
+         "height": 80
+        },
+        "absoluteRenderBounds": {
+         "x": 4360,
+         "y": 95,
+         "width": 1600,
+         "height": 80
+        }
+       },
+       {
+        "id": "13:4",
+        "name": "Instruction",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "A trapezium has exactly one pair of parallel sides. Drag each shape to the right group.",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 500,
+         "fontSize": 34,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 43
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4360,
+         "y": 180,
+         "width": 1600,
+         "height": 80
+        },
+        "absoluteRenderBounds": {
+         "x": 4360,
+         "y": 180,
+         "width": 1600,
+         "height": 80
+        }
+       },
+       {
+        "id": "13:5",
+        "name": "Play area",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.35
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4360,
+         "y": 330,
+         "width": 1600,
+         "height": 600
+        },
+        "absoluteRenderBounds": {
+         "x": 4360,
+         "y": 330,
+         "width": 1600,
+         "height": 600
+        },
+        "cornerRadius": 36
+       },
+       {
+        "id": "13:6",
+        "name": "Swiftee",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-swiftee"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 5840,
+         "y": 820,
+         "width": 220,
+         "height": 220
+        },
+        "absoluteRenderBounds": {
+         "x": 5840,
+         "y": 820,
+         "width": 220,
+         "height": 220
+        }
+       },
+       {
+        "id": "13:7",
+        "name": "Frosty glow",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientStops": [
+           {
+            "position": 0,
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 0.6
+            }
+           },
+           {
+            "position": 1,
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 0
+            }
+           }
+          ],
+          "gradientHandlePositions": []
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4200,
+         "y": 0,
+         "width": 1920,
+         "height": 120
+        },
+        "absoluteRenderBounds": {
+         "x": 4200,
+         "y": 0,
+         "width": 1920,
+         "height": 120
+        }
+       },
+       {
+        "id": "13:8",
+        "name": "Masked sparkle",
+        "type": "GROUP",
+        "blendMode": "PASS_THROUGH",
+        "fills": [],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 4260,
+         "y": 940,
+         "width": 120,
+         "height": 120
+        },
+        "absoluteRenderBounds": {
+         "x": 4260,
+         "y": 940,
+         "width": 120,
+         "height": 120
+        },
+        "children": [
+         {
+          "id": "13:9",
+          "name": "Mask",
+          "type": "ELLIPSE",
+          "isMask": true,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 1,
+             "g": 1,
+             "b": 1,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 4260,
+           "y": 940,
+           "width": 120,
+           "height": 120
+          },
+          "absoluteRenderBounds": {
+           "x": 4260,
+           "y": 940,
+           "width": 120,
+           "height": 120
+          }
+         },
+         {
+          "id": "13:10",
+          "name": "Sparkle art",
+          "type": "STAR",
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+           {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+             "r": 1,
+             "g": 0.8470588235294118,
+             "b": 0.30196078431372547,
+             "a": 1
+            }
+           }
+          ],
+          "strokes": [],
+          "effects": [],
+          "absoluteBoundingBox": {
+           "x": 4270,
+           "y": 950,
+           "width": 100,
+           "height": 100
+          },
+          "absoluteRenderBounds": {
+           "x": 4270,
+           "y": 950,
+           "width": 100,
+           "height": 100
+          }
+         }
+        ]
+       },
+       {
+        "id": "13:11",
+        "name": "Hint bubble text",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Look for sides that never meet.",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 600,
+         "fontSize": 30,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 38
+        },
+        "characterStyleOverrides": [
+         1,
+         1,
+         1,
+         1,
+         0,
+         0,
+         0
+        ],
+        "styleOverrideTable": {
+         "1": {
+          "fontWeight": 800
+         }
+        },
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 5360,
+         "y": 700,
+         "width": 460,
+         "height": 120
+        },
+        "absoluteRenderBounds": {
+         "x": 5360,
+         "y": 700,
+         "width": 460,
+         "height": 120
+        }
+       }
+      ]
+     },
+     {
+      "id": "10:4",
+      "name": "03 Match the shapes",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "background": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "fills": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "backgroundColor": {
+       "r": 0.8509803921568627,
+       "g": 0.9450980392156862,
+       "b": 0.9921568627450981,
+       "a": 1
+      },
+      "strokes": [],
+      "effects": [],
+      "absoluteBoundingBox": {
+       "x": 0,
+       "y": 1300,
+       "width": 1920,
+       "height": 1080
+      },
+      "absoluteRenderBounds": {
+       "x": 0,
+       "y": 1300,
+       "width": 1920,
+       "height": 1080
+      },
+      "children": [
+       {
+        "id": "14:1",
+        "name": "Ice background",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-ice-bg"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 0,
+         "y": 1300,
+         "width": 1920,
+         "height": 1080
+        },
+        "absoluteRenderBounds": {
+         "x": 0,
+         "y": 1300,
+         "width": 1920,
+         "height": 1080
+        }
+       },
+       {
+        "id": "14:2",
+        "name": "Instruction panel",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.94
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.5607843137254902,
+           "g": 0.8274509803921568,
+           "b": 0.9568627450980393,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 120,
+         "y": 1360,
+         "width": 1680,
+         "height": 200
+        },
+        "absoluteRenderBounds": {
+         "x": 120,
+         "y": 1360,
+         "width": 1680,
+         "height": 200
+        },
+        "cornerRadius": 40
+       },
+       {
+        "id": "14:3",
+        "name": "Screen title",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Match the shapes",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 56,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 70
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 160,
+         "y": 1400,
+         "width": 1600,
+         "height": 80
+        },
+        "absoluteRenderBounds": {
+         "x": 160,
+         "y": 1400,
+         "width": 1600,
+         "height": 80
+        }
+       },
+       {
+        "id": "14:4",
+        "name": "Instruction",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Match each shape to its name.",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 500,
+         "fontSize": 34,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 43
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 160,
+         "y": 1485,
+         "width": 1600,
+         "height": 60
+        },
+        "absoluteRenderBounds": {
+         "x": 160,
+         "y": 1485,
+         "width": 1600,
+         "height": 60
+        }
+       },
+       {
+        "id": "14:5",
+        "name": "Play area",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.25
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 160,
+         "y": 1600,
+         "width": 1600,
+         "height": 680
+        },
+        "absoluteRenderBounds": {
+         "x": 160,
+         "y": 1600,
+         "width": 1600,
+         "height": 680
+        },
+        "cornerRadius": 36
+       },
+       {
+        "id": "14:10",
+        "name": "Target Trapezium",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.8
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.48627450980392156,
+           "g": 0.7764705882352941,
+           "b": 0.9254901960784314,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 220,
+         "y": 1940,
+         "width": 440,
+         "height": 260
+        },
+        "absoluteRenderBounds": {
+         "x": 220,
+         "y": 1940,
+         "width": 440,
+         "height": 260
+        },
+        "cornerRadius": 32
+       },
+       {
+        "id": "14:11",
+        "name": "Target label Trapezium",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Trapezium",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 44,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 55
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 220,
+         "y": 2040,
+         "width": 440,
+         "height": 60
+        },
+        "absoluteRenderBounds": {
+         "x": 220,
+         "y": 2040,
+         "width": 440,
+         "height": 60
+        }
+       },
+       {
+        "id": "14:12",
+        "name": "Target Parallelogram",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.8
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.48627450980392156,
+           "g": 0.7764705882352941,
+           "b": 0.9254901960784314,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 740,
+         "y": 1940,
+         "width": 440,
+         "height": 260
+        },
+        "absoluteRenderBounds": {
+         "x": 740,
+         "y": 1940,
+         "width": 440,
+         "height": 260
+        },
+        "cornerRadius": 32
+       },
+       {
+        "id": "14:13",
+        "name": "Target label Parallelogram",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Parallelogram",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 44,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 55
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 740,
+         "y": 2040,
+         "width": 440,
+         "height": 60
+        },
+        "absoluteRenderBounds": {
+         "x": 740,
+         "y": 2040,
+         "width": 440,
+         "height": 60
+        }
+       },
+       {
+        "id": "14:14",
+        "name": "Target Kite",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.8
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.48627450980392156,
+           "g": 0.7764705882352941,
+           "b": 0.9254901960784314,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 1260,
+         "y": 1940,
+         "width": 440,
+         "height": 260
+        },
+        "absoluteRenderBounds": {
+         "x": 1260,
+         "y": 1940,
+         "width": 440,
+         "height": 260
+        },
+        "cornerRadius": 32
+       },
+       {
+        "id": "14:15",
+        "name": "Target label Kite",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Kite",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 44,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 55
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 1260,
+         "y": 2040,
+         "width": 440,
+         "height": 60
+        },
+        "absoluteRenderBounds": {
+         "x": 1260,
+         "y": 2040,
+         "width": 440,
+         "height": 60
+        }
+       },
+       {
+        "id": "14:20",
+        "name": "Swiftee",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-swiftee"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 1660,
+         "y": 1630,
+         "width": 200,
+         "height": 200
+        },
+        "absoluteRenderBounds": {
+         "x": 1660,
+         "y": 1630,
+         "width": 200,
+         "height": 200
+        }
+       }
+      ]
+     },
+     {
+      "id": "10:5",
+      "name": "04 Well done",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "background": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "fills": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.8509803921568627,
+         "g": 0.9450980392156862,
+         "b": 0.9921568627450981,
+         "a": 1
+        }
+       }
+      ],
+      "backgroundColor": {
+       "r": 0.8509803921568627,
+       "g": 0.9450980392156862,
+       "b": 0.9921568627450981,
+       "a": 1
+      },
+      "strokes": [],
+      "effects": [],
+      "absoluteBoundingBox": {
+       "x": 2100,
+       "y": 1300,
+       "width": 1920,
+       "height": 1080
+      },
+      "absoluteRenderBounds": {
+       "x": 2100,
+       "y": 1300,
+       "width": 1920,
+       "height": 1080
+      },
+      "children": [
+       {
+        "id": "15:1",
+        "name": "Ice background",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-ice-bg"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2100,
+         "y": 1300,
+         "width": 1920,
+         "height": 1080
+        },
+        "absoluteRenderBounds": {
+         "x": 2100,
+         "y": 1300,
+         "width": 1920,
+         "height": 1080
+        }
+       },
+       {
+        "id": "15:2",
+        "name": "Panel",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          },
+          "opacity": 0.94
+         }
+        ],
+        "strokes": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.5607843137254902,
+           "g": 0.8274509803921568,
+           "b": 0.9568627450980393,
+           "a": 1
+          }
+         }
+        ],
+        "strokeWeight": 6,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2560,
+         "y": 1500,
+         "width": 1000,
+         "height": 320
+        },
+        "absoluteRenderBounds": {
+         "x": 2560,
+         "y": 1500,
+         "width": 1000,
+         "height": 320
+        },
+        "cornerRadius": 40
+       },
+       {
+        "id": "15:3",
+        "name": "Heading",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Expedition complete!",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 84,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 105
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.058823529411764705,
+           "g": 0.15294117647058825,
+           "b": 0.25098039215686274,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2600,
+         "y": 1600,
+         "width": 920,
+         "height": 100
+        },
+        "absoluteRenderBounds": {
+         "x": 2600,
+         "y": 1600,
+         "width": 920,
+         "height": 100
+        }
+       },
+       {
+        "id": "15:4",
+        "name": "Message",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "You can spot and name trapeziums.",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 600,
+         "fontSize": 36,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 45
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.12156862745098039,
+           "g": 0.37254901960784315,
+           "b": 0.5450980392156862,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2600,
+         "y": 1710,
+         "width": 920,
+         "height": 50
+        },
+        "absoluteRenderBounds": {
+         "x": 2600,
+         "y": 1710,
+         "width": 920,
+         "height": 50
+        }
+       },
+       {
+        "id": "15:5",
+        "name": "Swiftee",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "ref-swiftee"
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2920,
+         "y": 1840,
+         "width": 280,
+         "height": 280
+        },
+        "absoluteRenderBounds": {
+         "x": 2920,
+         "y": 1840,
+         "width": 280,
+         "height": 280
+        }
+       },
+       {
+        "id": "15:6",
+        "name": "Play again button",
+        "type": "RECTANGLE",
+        "blendMode": "PASS_THROUGH",
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 0.16470588235294117,
+           "g": 0.6039215686274509,
+           "b": 0.8470588235294118,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2880,
+         "y": 2160,
+         "width": 360,
+         "height": 110
+        },
+        "absoluteRenderBounds": {
+         "x": 2880,
+         "y": 2160,
+         "width": 360,
+         "height": 110
+        },
+        "cornerRadius": 55,
+        "interactions": [
+         {
+          "trigger": {
+           "type": "ON_CLICK"
+          },
+          "actions": [
+           {
+            "type": "NODE",
+            "destinationId": "10:1",
+            "navigation": "NAVIGATE",
+            "transition": {
+             "type": "MOVE_IN",
+             "duration": 0.3,
+             "direction": "LEFT",
+             "easing": {
+              "type": "EASE_OUT"
+             }
+            },
+            "preserveScrollPosition": false
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "15:7",
+        "name": "Play again label",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Play again",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 44,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 55
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 2880,
+         "y": 2182,
+         "width": 360,
+         "height": 66
+        },
+        "absoluteRenderBounds": {
+         "x": 2880,
+         "y": 2182,
+         "width": 360,
+         "height": 66
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "0:2",
+    "name": "Components",
+    "type": "CANVAS",
+    "backgroundColor": {
+     "r": 0.9607843137254902,
+     "g": 0.9607843137254902,
+     "b": 0.9607843137254902,
+     "a": 1
+    },
+    "children": [
+     {
+      "id": "20:1",
+      "name": "Button / Primary",
+      "type": "COMPONENT",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+       {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+         "r": 0.16470588235294117,
+         "g": 0.6039215686274509,
+         "b": 0.8470588235294118,
+         "a": 1
+        }
+       }
+      ],
+      "strokes": [],
+      "effects": [],
+      "cornerRadius": 55,
+      "absoluteBoundingBox": {
+       "x": 0,
+       "y": 3000,
+       "width": 360,
+       "height": 110
+      },
+      "absoluteRenderBounds": {
+       "x": 0,
+       "y": 3000,
+       "width": 360,
+       "height": 110
+      },
+      "children": [
+       {
+        "id": "20:2",
+        "name": "Label",
+        "type": "TEXT",
+        "blendMode": "PASS_THROUGH",
+        "characters": "Button",
+        "style": {
+         "fontFamily": "Baloo 2",
+         "fontPostScriptName": null,
+         "fontWeight": 700,
+         "fontSize": 44,
+         "textAlignHorizontal": "CENTER",
+         "textAlignVertical": "CENTER",
+         "lineHeightPx": 55
+        },
+        "characterStyleOverrides": [],
+        "styleOverrideTable": {},
+        "fills": [
+         {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+           "r": 1,
+           "g": 1,
+           "b": 1,
+           "a": 1
+          }
+         }
+        ],
+        "strokes": [],
+        "effects": [],
+        "absoluteBoundingBox": {
+         "x": 0,
+         "y": 3022,
+         "width": 360,
+         "height": 66
+        },
+        "absoluteRenderBounds": {
+         "x": 0,
+         "y": 3022,
+         "width": 360,
+         "height": 66
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "components": {},
+ "styles": {}
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "prompt": "Create a Grade 9 coordinate game where learners guide an aircraft to the correct location. Keep the original lesson order, use minimal text, and make movement the main interaction.",
+  "title": "Air Traffic Control — Coordinate Mission",
+  "gradeOrAge": "Grade 9",
+  "subject": "Mathematics",
+  "learningObjective": "Locate and plot points in all four quadrants using ordered pairs (x, y).",
+  "mechanic": "coordinate-navigation",
+  "customIdea": "",
+  "durationMinutes": 15,
+  "optional": {
+    "story": "Learners are air traffic controllers guiding flights around an airfield laid out on a coordinate grid.",
+    "difficulty": "standard",
+    "languageNotes": "",
+    "constraints": "",
+    "accessibilityNotes": ""
+  },
+  "visual": { "themeId": "airport", "paletteId": "daylight", "customReferenceNote": "" },
+  "options": { "minimalText": true, "preserveSequence": true, "reuseArtwork": true, "allowAddedPractice": false, "reducedMotion": false },
+  "aiInputs": { "includeSpeakerNotes": true, "includeHiddenSlides": false, "sendVisualReferences": false, "authorizedVisualSlideIds": [] },
+  "stage": { "width": 1920, "height": 1080 }
+}

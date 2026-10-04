@@ -1,0 +1,13 @@
+{
+  "asOf": "YYYY-MM-DD",
+  "source": "Copy current prices from the official Claude pricing page and write the date you copied them.",
+  "currency": "USD",
+  "models": {
+    "claude-opus-5-5": {
+      "inputPerMTok": null,
+      "outputPerMTok": null,
+      "cacheReadPerMTok": null,
+      "cacheWritePerMTok": null
+    }
+  }
+}

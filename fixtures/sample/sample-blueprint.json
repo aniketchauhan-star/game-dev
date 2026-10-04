@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "title": "Air Traffic Control — Coordinate Mission",
+  "learningOutcomes": [
+    { "id": "out-1", "text": "Locate and plot a point from an ordered pair (x, y), moving along x first and then y.", "sourceSlideIds": ["@slide:258", "@slide:259", "@slide:262"], "addedPractice": false },
+    { "id": "out-2", "text": "Identify the quadrant of a point from the signs of its coordinates.", "sourceSlideIds": ["@slide:266"], "addedPractice": false },
+    { "id": "out-3", "text": "Interpret negative coordinates as movement to the left or downward.", "sourceSlideIds": ["@slide:260"], "addedPractice": false },
+    { "id": "out-4", "text": "Compare and order points by their x-coordinates.", "sourceSlideIds": ["@slide:264"], "addedPractice": false }
+  ],
+  "coreMechanic": "coordinate-navigation",
+  "customMechanicDescription": null,
+  "premise": "You are the air traffic controller. Flights radio in with coordinates, and you guide each aircraft across an airfield laid out on a coordinate grid.",
+  "progression": "Starts with the target marked and a live coordinate readout, then removes the marker, then accepts any point in a quadrant, and finishes by ordering aircraft by x-coordinate.",
+  "assessment": "Every scene is checked with a deterministic rule (exact point, quadrant, matches or order). Feedback names common mistakes such as swapped coordinates or sign errors, and hints become more explicit after each attempt.",
+  "assetNeeds": [
+    { "id": "bg-airfield", "role": "background", "description": "Top-down airfield map (from slide 9)", "assignedAssetId": "@asset:airfield-map.png", "required": false },
+    { "id": "char-plane", "role": "character", "description": "The aircraft the learner guides (from slide 7)", "assignedAssetId": "@asset:aircraft.png", "required": true }
+  ],
+  "accessibility": [
+    "Every move works with arrow keys, on-screen buttons, or by selecting a grid point — no dragging required.",
+    "Feedback uses text and icons, never color alone.",
+    "Respects the reduced-motion setting and starts sound only after the learner presses Start."
+  ],
+  "unresolvedDecisions": [
+    { "id": "dec-1", "question": "Include the distance-formula extension (slide 8) as optional practice?", "options": ["Leave it out", "Add an optional scene"] }
+  ],
+  "assumptions": [
+    "Grade 9 learners already know negative numbers on a number line.",
+    "Learners play individually on a laptop or tablet."
+  ],
+  "mechanicFit": "The lesson is about locating positions from ordered pairs, so moving an aircraft to a coordinate makes learners perform exactly the skill being taught: move along x, then along y. A matching scene and an ordering scene check the related quadrant and comparison ideas without switching to a generic quiz.",
+  "scenes": [
+    {
+      "id": "scn_tower01",
+      "title": "Welcome to the tower",
+      "pattern": "discover",
+      "sourceSlideIds": ["@slide:258", "@slide:259"],
+      "addedPractice": false,
+      "objective": "Recognize the axes, the origin and what an ordered pair means.",
+      "visibleContent": "A concept card over a small coordinate grid with three short points about the axes and ordered pairs.",
+      "learnerAction": "Read the three points and continue.",
+      "expectedResult": "The learner moves on to the first navigation task.",
+      "instruction": "Your airfield is a coordinate grid.",
+      "interaction": {
+        "type": "info",
+        "points": [
+          "The x-axis runs left to right; the y-axis runs bottom to top.",
+          "They cross at the origin, (0, 0).",
+          "An ordered pair (x, y) means: move along x first, then along y."
+        ],
+        "illustration": "grid",
+        "continueLabel": "Start mission"
+      },
+      "successFeedback": "Let's guide your first flight.",
+      "errorFeedback": "Read the three points, then choose Start mission.",
+      "hints": ["x comes first, then y."],
+      "next": "scn_taxi02",
+      "assetNeedIds": { "background": null, "character": null },
+      "completion": "The learner selects Start mission.",
+      "difficulty": "gentle",
+      "locks": { "sequence": true, "wording": false, "answer": false, "layout": false, "assets": false },
+      "origin": "demo"
+    },
+    {
+      "id": "scn_taxi02",
+      "title": "Taxi to Runway Alpha",
+      "pattern": "manipulate",
+      "sourceSlideIds": ["@slide:259", "@slide:262"],
+      "addedPractice": false,
+      "objective": "Move to a point given as an ordered pair, x first then y.",
+      "visibleContent": "Airfield grid from −5 to 5 across and −4 to 4 up; flight NX7 at the origin; Runway Alpha marked at (3, 2).",
+      "learnerAction": "Move the aircraft with the arrow buttons, arrow keys or by selecting a grid point, then confirm.",
+      "expectedResult": "The aircraft stops exactly at (3, 2).",
+      "instruction": "Guide flight NX7 to Runway Alpha at (3, 2).",
+      "interaction": {
+        "type": "coordinate-navigation",
+        "grid": { "xMin": -5, "xMax": 5, "yMin": -4, "yMax": 4, "step": 1 },
+        "start": { "x": 0, "y": 0 },
+        "rule": { "kind": "point-equals", "target": { "x": 3, "y": 2 } },
+        "showTargetMarker": true,
+        "showCoordinateReadout": true,
+        "moverLabel": "NX7",
+        "landmarks": [
+          { "id": "runway-alpha", "label": "Runway Alpha", "point": { "x": 3, "y": 2 }, "icon": "runway" },
+          { "id": "tower", "label": "Tower", "point": { "x": -2, "y": 3 }, "icon": "tower" }
+        ],
+        "display": { "gridEmphasis": "standard", "pointSize": "standard", "labelSize": "standard" }
+      },
+      "successFeedback": "Cleared to land! (3, 2) is 3 right and 2 up.",
+      "errorFeedback": "Check the order: move along x first, then along y.",
+      "hints": ["Start at the origin, (0, 0).", "x = 3: move 3 units right.", "y = 2: then move 2 units up."],
+      "next": "scn_quad03",
+      "assetNeedIds": { "background": null, "character": "char-plane" },
+      "completion": "The aircraft is confirmed at (3, 2).",
+      "difficulty": "gentle",
+      "locks": { "sequence": true, "wording": false, "answer": false, "layout": false, "assets": false },
+      "origin": "demo"
+    },
+    {
+      "id": "scn_quad03",
+      "title": "Which quadrant?",
+      "pattern": "predict",
+      "sourceSlideIds": ["@slide:266", "@slide:260"],
+      "addedPractice": false,
+      "objective": "Identify a point's quadrant from the signs of its coordinates.",
+      "visibleContent": "Six aircraft position cards and five bays: Quadrant I, II, III, IV and On an axis.",
+      "learnerAction": "Drag each card into a bay, or select a card and then a bay.",
+      "expectedResult": "Every position is in its correct quadrant; (0, 4) is on an axis.",
+      "instruction": "Sort each aircraft position into its quadrant.",
+      "interaction": {
+        "type": "drag-match",
+        "items": [
+          { "id": "p1", "label": "(2, 3)", "imageAssetId": null },
+          { "id": "p2", "label": "(5, 1)", "imageAssetId": null },
+          { "id": "p3", "label": "(−4, 1)", "imageAssetId": null },
+          { "id": "p4", "label": "(−3, −2)", "imageAssetId": null },
+          { "id": "p5", "label": "(4, −1)", "imageAssetId": null },
+          { "id": "p6", "label": "(0, 4)", "imageAssetId": null }
+        ],
+        "targets": [
+          { "id": "q1", "label": "Quadrant I", "imageAssetId": null, "capacity": 3 },
+          { "id": "q2", "label": "Quadrant II", "imageAssetId": null, "capacity": 3 },
+          { "id": "q3", "label": "Quadrant III", "imageAssetId": null, "capacity": 3 },
+          { "id": "q4", "label": "Quadrant IV", "imageAssetId": null, "capacity": 3 },
+          { "id": "axis", "label": "On an axis", "imageAssetId": null, "capacity": 3 }
+        ],
+        "rule": {
+          "kind": "match-sets",
+          "accepts": [
+            { "itemId": "p1", "targetIds": ["q1"] },
+            { "itemId": "p2", "targetIds": ["q1"] },
+            { "itemId": "p3", "targetIds": ["q2"] },
+            { "itemId": "p4", "targetIds": ["q3"] },
+            { "itemId": "p5", "targetIds": ["q4"] },
+            { "itemId": "p6", "targetIds": ["axis"] }
+          ]
+        },
+        "trayPosition": "bottom"
+      },
+      "successFeedback": "All positions are sorted correctly.",
+      "errorFeedback": "Look at the signs: x tells left (−) or right (+), y tells down (−) or up (+).",
+      "hints": ["Quadrant I has both coordinates positive.", "Quadrant II: x negative, y positive. Quadrant IV: x positive, y negative.", "A zero coordinate puts the point on an axis."],
+      "next": "scn_hangar04",
+      "assetNeedIds": { "background": null, "character": null },
+      "completion": "All six cards are in a correct bay.",
+      "difficulty": "standard",
+      "locks": { "sequence": true, "wording": false, "answer": false, "layout": false, "assets": false },
+      "origin": "demo"
+    },
+    {
+      "id": "scn_hangar04",
+      "title": "Hangar check",
+      "pattern": "test",
+      "sourceSlideIds": ["@slide:260"],
+      "addedPractice": false,
+      "objective": "Use negative coordinates to locate a point without a marker.",
+      "visibleContent": "The same airfield grid, no target marker; flight QF2 at the origin.",
+      "learnerAction": "Move the aircraft to (−4, −3) and confirm.",
+      "expectedResult": "The aircraft stops exactly at (−4, −3).",
+      "instruction": "Park flight QF2 at the hangar: (−4, −3).",
+      "interaction": {
+        "type": "coordinate-navigation",
+        "grid": { "xMin": -5, "xMax": 5, "yMin": -4, "yMax": 4, "step": 1 },
+        "start": { "x": 0, "y": 0 },
+        "rule": { "kind": "point-equals", "target": { "x": -4, "y": -3 } },
+        "showTargetMarker": false,
+        "showCoordinateReadout": true,
+        "moverLabel": "QF2",
+        "landmarks": [{ "id": "tower", "label": "Tower", "point": { "x": 2, "y": 3 }, "icon": "tower" }],
+        "display": { "gridEmphasis": "standard", "pointSize": "standard", "labelSize": "standard" }
+      },
+      "successFeedback": "Parked! (−4, −3) is 4 left and 3 down.",
+      "errorFeedback": "Check the signs: negative x is left, negative y is down.",
+      "hints": ["Negative x means left of the y-axis.", "Move 4 units left, then 3 units down.", "Both coordinates are negative, so the hangar is in Quadrant III."],
+      "next": "scn_park05",
+      "assetNeedIds": { "background": null, "character": "char-plane" },
+      "completion": "The aircraft is confirmed at (−4, −3).",
+      "difficulty": "standard",
+      "locks": { "sequence": true, "wording": false, "answer": false, "layout": false, "assets": false },
+      "origin": "demo"
+    },
+    {
+      "id": "scn_park05",
+      "title": "Holding pattern",
+      "pattern": "apply",
+      "sourceSlideIds": ["@slide:264", "@slide:266"],
+      "addedPractice": false,
+      "objective": "Apply quadrant signs to choose any valid point.",
+      "visibleContent": "The airfield grid; flight BA9 starts at (2, −1).",
+      "learnerAction": "Move the aircraft to any point in Quadrant II and confirm.",
+      "expectedResult": "The aircraft ends with negative x and positive y.",
+      "instruction": "Park flight BA9 anywhere in Quadrant II.",
+      "interaction": {
+        "type": "coordinate-navigation",
+        "grid": { "xMin": -5, "xMax": 5, "yMin": -4, "yMax": 4, "step": 1 },
+        "start": { "x": 2, "y": -1 },
+        "rule": { "kind": "in-quadrant", "quadrant": 2 },
+        "showTargetMarker": false,
+        "showCoordinateReadout": true,
+        "moverLabel": "BA9",
+        "landmarks": [],
+        "display": { "gridEmphasis": "standard", "pointSize": "standard", "labelSize": "standard" }
+      },
+      "successFeedback": "Holding in Quadrant II — negative x, positive y.",
+      "errorFeedback": "Quadrant II is top left: x must be negative and y positive.",
+      "hints": ["Quadrant II is the top-left part of the grid.", "x must be negative and y must be positive.", "For example, (−2, 2) is in Quadrant II."],
+      "next": "scn_lineup06",
+      "assetNeedIds": { "background": null, "character": "char-plane" },
+      "completion": "The aircraft is confirmed in Quadrant II.",
+      "difficulty": "standard",
+      "locks": { "sequence": true, "wording": false, "answer": false, "layout": false, "assets": false },
+      "origin": "demo"
+    },
+    {
+      "id": "scn_lineup06",
+      "title": "Line up for take-off",
+      "pattern": "apply",
+      "sourceSlideIds": ["@slide:264"],
+      "addedPractice": false,
+      "objective": "Order points by their x-coordinates.",
+      "visibleContent": "Five aircraft cards with their positions, to be arranged in a row.",
+      "learnerAction": "Arrange the cards from left (smallest x) to right (largest x).",
+      "expectedResult": "Cards ordered by x; the two with x = 1 may be in either order.",
+      "instruction": "Line up the aircraft from left to right by x-coordinate.",
+      "interaction": {
+        "type": "sequence-sort",
+        "items": [
+          { "id": "nx7", "label": "NX7 at (−3, 2)", "value": -3, "imageAssetId": null },
+          { "id": "qf2", "label": "QF2 at (1, −4)", "value": 1, "imageAssetId": null },
+          { "id": "ba9", "label": "BA9 at (1, 3)", "value": 1, "imageAssetId": null },
+          { "id": "ai4", "label": "AI4 at (4, 0)", "value": 4, "imageAssetId": null },
+          { "id": "lh5", "label": "LH5 at (−1, −2)", "value": -1, "imageAssetId": null }
+        ],
+        "rule": { "kind": "order-by-value", "direction": "ascending" },
+        "orientation": "horizontal",
+        "showValues": false,
+        "startLabel": "Left (smallest x)",
+        "endLabel": "Right (largest x)"
+      },
+      "successFeedback": "Lined up and ready for take-off!",
+      "errorFeedback": "Compare the first number of each pair: a smaller x goes further left.",
+      "hints": ["Only the x-coordinate (the first number) matters.", "Negative x values go furthest left.", "QF2 and BA9 both have x = 1, so either order is fine."],
+      "next": null,
+      "assetNeedIds": { "background": null, "character": null },
+      "completion": "All five cards are in a correct order.",
+      "difficulty": "standard",
+      "locks": { "sequence": true, "wording": false, "answer": false, "layout": false, "assets": false },
+      "origin": "demo"
+    }
+  ]
+}

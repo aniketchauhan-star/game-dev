@@ -1,0 +1,5 @@
+{
+  // VS Code's Live Server cannot run NEXUS Play Studio (it needs `npm run dev`); its root page only points to the
+  // running studio. Keep Live Server on this computer: the folder can contain .env (API keys) and data/ (projects).
+  "liveServer.settings.host": "127.0.0.1"
+}

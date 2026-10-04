@@ -1,0 +1,94 @@
+/*
+ * NEXUS Play Studio design tokens. The studio is a dark, quiet workstation;
+ * generated games use their own creator-selected themes.
+ * Contrast of every text/boundary pair is checked by scripts/check-contrast.ts.
+ */
+:root {
+  /* Surfaces */
+  --bg-app: #080d18;
+  --bg-sidebar: #0c1322;
+  --bg-panel: #111c2d;
+  --bg-panel-raised: #17243a;
+  --bg-hover: #1c2b44;
+  --bg-input: #0d1626;
+  --border-subtle: #263650;
+  --border-strong: #6a80a6;
+
+  /* Text */
+  --text-primary: #f3f7ff;
+  --text-secondary: #b4c2d8;
+  --text-tertiary: #93a4bf;
+
+  /* Accents & status */
+  --accent-cyan: #68e0f5;
+  --accent-periwinkle: #8fb2ff;
+  --accent-violet: #a398ff;
+  --success: #7ae3ba;
+  --warning: #ffd087;
+  --danger: #ff94a5;
+  --on-accent: #06121c;
+
+  --accent-cyan-soft: rgba(104, 224, 245, 0.12);
+  --accent-violet-soft: rgba(163, 152, 255, 0.13);
+  --success-soft: rgba(122, 227, 186, 0.12);
+  --warning-soft: rgba(255, 208, 135, 0.12);
+  --danger-soft: rgba(255, 148, 165, 0.12);
+  --gradient-primary: linear-gradient(120deg, #68e0f5 0%, #8fb2ff 100%);
+
+  /* Typography */
+  --font-display: 'Space Grotesk Variable', 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-ui: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 14px;
+  --fs-base: 15px;
+  --fs-lg: 16px;
+  --fs-xl: 18px;
+  --fs-2xl: 22px;
+  --fs-3xl: 28px;
+
+  /* Spacing (8px system, with 4px half-steps) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+
+  /* Shape & depth */
+  --r-panel: 18px;
+  --r-card: 16px;
+  --r-control: 11px;
+  --r-pill: 999px;
+  --control-h: 44px;
+  --control-h-sm: 36px;
+  --shadow-panel: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 32px rgba(0, 0, 0, 0.32);
+  --shadow-raised: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 18px 44px rgba(0, 0, 0, 0.42);
+  --edge-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+  /* Motion */
+  --t-fast: 140ms;
+  --t-base: 180ms;
+  --t-slow: 220ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Layout */
+  --topbar-h: 64px;
+  --rail-w: 72px;
+  --left-w: 256px;
+  --right-w: 336px;
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-base: 0ms;
+    --t-slow: 0ms;
+  }
+}

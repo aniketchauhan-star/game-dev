@@ -1,0 +1,62 @@
+{
+  "name": "nexus-play-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NEXUS Play Studio \u2014 from slides to playable learning. A local AI game-authoring studio.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n runtime,api,worker,studio -c magenta,cyan,yellow,green \"npm:dev:runtime\" \"npm:dev:api\" \"npm:dev:worker\" \"npm:dev:studio\"",
+    "dev:runtime": "vite build --config vite.runtime.config.ts --watch",
+    "dev:api": "tsx watch --clear-screen=false server/src/index.ts",
+    "dev:worker": "tsx watch --clear-screen=false server/src/worker.ts",
+    "dev:studio": "vite --config vite.config.ts",
+    "build": "npm run build:runtime && npm run build:studio",
+    "build:runtime": "vite build --config vite.runtime.config.ts",
+    "build:studio": "vite build --config vite.config.ts",
+    "start": "concurrently -k -n api,worker -c cyan,yellow \"NODE_ENV=production tsx server/src/index.ts\" \"NODE_ENV=production tsx server/src/worker.ts\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "fixtures:sample": "tsx fixtures/scripts/make-sample-deck.ts",
+    "check:contrast": "tsx scripts/check-contrast.ts",
+    "fixtures:trapezium": "tsx fixtures/scripts/make-trapezium.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@fastify/multipart": "^10.1.2",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/nunito": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@tanstack/react-query": "^5.104.1",
+    "fastify": "^5.12.5",
+    "lucide-react": "^1.50.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.3.289",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "saxes": "^6.0.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "yauzl": "^3.4.0",
+    "yazl": "^3.3.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/yauzl": "^3.4.0",
+    "@types/yazl": "^3.3.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}

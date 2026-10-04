@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "topic": "Locating points on the coordinate plane",
+  "summary": "The deck introduces the coordinate plane through an airfield metaphor: the x- and y-axes, ordered pairs (x, y), the four quadrants and negative coordinates, ending with practice tasks for guiding aircraft. An optional extension introduces the distance formula.",
+  "concepts": [
+    { "id": "cpt-1", "name": "Axes and origin", "description": "The x-axis runs left to right, the y-axis bottom to top, and they cross at the origin (0, 0).", "sourceSlideIds": ["@slide:258"] },
+    { "id": "cpt-2", "name": "Ordered pairs", "description": "(x, y): move along x first (right is positive), then along y (up is positive).", "sourceSlideIds": ["@slide:259", "@slide:262"] },
+    { "id": "cpt-3", "name": "Quadrants", "description": "The axes split the plane into four quadrants identified by the signs of x and y; points on an axis are in no quadrant.", "sourceSlideIds": ["@slide:266"] },
+    { "id": "cpt-4", "name": "Negative coordinates", "description": "A negative sign means left (for x) or down (for y); the number is the distance.", "sourceSlideIds": ["@slide:260"] },
+    { "id": "cpt-5", "name": "Distance between points (extension)", "description": "The distance formula, offered as optional extension material.", "sourceSlideIds": ["@slide:263"] }
+  ],
+  "prerequisites": [
+    { "id": "pre-1", "text": "Counting on a number line, including negative numbers.", "sourceSlideIds": ["@slide:260"], "inferred": true }
+  ],
+  "objectives": [
+    { "id": "obj-1", "text": "Locate and plot a point from an ordered pair (x, y), moving along x first and then y.", "sourceSlideIds": ["@slide:258", "@slide:259", "@slide:262"], "addedPractice": false, "status": "proposed", "origin": "demo", "locked": false },
+    { "id": "obj-2", "text": "Identify the quadrant of a point from the signs of its coordinates.", "sourceSlideIds": ["@slide:266"], "addedPractice": false, "status": "proposed", "origin": "demo", "locked": false },
+    { "id": "obj-3", "text": "Interpret negative coordinates as movement to the left or downward.", "sourceSlideIds": ["@slide:260"], "addedPractice": false, "status": "proposed", "origin": "demo", "locked": false },
+    { "id": "obj-4", "text": "Compare and order points by their x-coordinates.", "sourceSlideIds": ["@slide:264"], "addedPractice": false, "status": "proposed", "origin": "demo", "locked": false }
+  ],
+  "examples": [
+    { "id": "ex-1", "text": "(3, 2) means 3 right, then 2 up.", "sourceSlideIds": ["@slide:259"], "required": true },
+    { "id": "ex-2", "text": "(−4, −3) means 4 left, then 3 down, and lies in Quadrant III.", "sourceSlideIds": ["@slide:260"], "required": false }
+  ],
+  "questions": [
+    { "id": "q-1", "prompt": "Which way do you move first for the point (3, −2)?", "answer": "3 units right along the x-axis.", "sourceSlideIds": ["@slide:259", "@slide:264"], "addedPractice": false },
+    { "id": "q-2", "prompt": "In which quadrant is (−4, −3)?", "answer": "Quadrant III.", "sourceSlideIds": ["@slide:260", "@slide:266"], "addedPractice": false }
+  ],
+  "interactions": [
+    { "id": "int-1", "mechanic": "coordinate-navigation", "description": "Guide an aircraft to a runway or hangar given as an ordered pair.", "sourceSlideIds": ["@slide:259", "@slide:264"], "addedPractice": false },
+    { "id": "int-2", "mechanic": "drag-match", "description": "Sort points into the quadrant they belong to.", "sourceSlideIds": ["@slide:266"], "addedPractice": false },
+    { "id": "int-3", "mechanic": "sequence-sort", "description": "Line aircraft up from left to right by x-coordinate.", "sourceSlideIds": ["@slide:264"], "addedPractice": false }
+  ],
+  "openQuestions": [
+    "Should the distance-formula extension (slide 8) appear in the game as optional practice?",
+    "Slide 6 (teacher answer key) is hidden and was excluded from the analysis."
+  ]
+}
